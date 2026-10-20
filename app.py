@@ -77,8 +77,8 @@ else:
                     st.success("Registration Successful! Save your QR Code below:")
                     
                     # Generate QR Code pointing to this Streamlit app with mobile query param
-                    current_app_url = st.query_params.get("origin", "https://your-streamlit-app.streamlit.app") # Apna app URL yahan dal sakte ho
-                    qr_link = f"https://your-app-name.streamlit.app/?mobile={s_mobile}" # Replace with your deployed streamlit URL
+                    current_app_url = st.query_params.get("origin", "https://task-dashboard-9glpaczfpjbruvt3c6v7k6.streamlit.app/") # Apna app URL yahan dal sakte ho
+                    qr_link = f"https://task-dashboard-9glpaczfpjbruvt3c6v7k6.streamlit.app/{s_mobile}" # Replace with your deployed streamlit URL
                     
                     img = qrcode.make(qr_link)
                     buf = BytesIO()
